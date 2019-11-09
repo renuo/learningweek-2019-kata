@@ -1,0 +1,45 @@
+require:
+  - rubocop-rspec
+
+Metrics/LineLength:
+  Max: 120
+
+Style/Documentation:
+  Enabled: false
+
+Style/MixinUsage:
+  Exclude:
+    - 'bin/setup'
+
+Style/NonNilCheck:
+  IncludeSemanticChanges: true
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+
+RSpec/MultipleExpectations:
+  Enabled: false
+
+RSpec/DescribedClass:
+  SkipBlocks: true
+
+RSpec/ExampleLength:
+  Exclude:
+    - 'spec/config/**/*'
+    - 'spec/system/**/*'
+    - 'spec/requests/**/*'
+
+RSpec/ImplicitSubject:
+  Enabled: false
+
+RSpec/NestedGroups:
+  Max: 5
+
+AllCops:
+  Exclude:
+    - 'bin/**/*'
+    - 'script/**/*'
+    - 'log/**/*'
+    - 'public/**/*'
+    - 'tmp/**/*'
